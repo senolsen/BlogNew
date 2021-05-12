@@ -1,0 +1,100 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<br />
+<h3 class="mt-4 mb-2">İstatistik - Sertifika Görev 2/4</h3>
+<br />
+<div class="row">
+    <div class="col-md-3 col-sm-6 col-12">
+        <div class="info-box bg-info">
+            <div class="info-box-content">
+                <span class="info-box-text">Kategori</span>
+                <span class="info-box-number">@ViewBag.ToplamKategori</span>
+
+                <div class="progress">
+                    <div class="progress-bar" style="width: 100%"></div>
+                </div>
+                <span class="progress-description">
+                    Toplam kategori Sayısı
+                </span>
+            </div>
+            <!-- /.info-box-content -->
+        </div>
+        <!-- /.info-box -->
+    </div>
+    <!-- /.col -->
+    <div class="col-md-3 col-sm-6 col-12">
+        <div class="info-box bg-success">
+            <div class="info-box-content">
+                <span class="info-box-text">Yazılım</span>
+                <span class="info-box-number">@ViewBag.ToplamYazilim</span>
+
+                <div class="progress">
+                    <div class="progress-bar" style="width: 100%"></div>
+                </div>
+                <span class="progress-description">
+                    Blog tablosunda "yazılım" kategorisine ait başlık sayısı
+                </span>
+            </div>
+            <!-- /.info-box-content -->
+        </div>
+        <!-- /.info-box -->
+    </div>
+    <!-- /.col -->
+    <div class="col-md-3 col-sm-6 col-12">
+        <div class="info-box bg-warning">
+            <div class="info-box-content">
+                <span class="info-box-text">Yazar</span>
+                <span class="info-box-number">@ViewBag.ToplamYazar</span>
+
+                <div class="progress">
+                    <div class="progress-bar" style="width: 100%"></div>
+                </div>
+                <span class="progress-description">
+                    Yazar adında 'a' harfi geçen yazar sayısı
+                </span>
+            </div>
+            <!-- /.info-box-content -->
+        </div>
+        <!-- /.info-box -->
+    </div>
+    <!-- /.col -->
+    <div class="col-md-3 col-sm-6 col-12">
+        <div class="info-box bg-danger">
+            <div class="info-box-content">
+                <span class="info-box-text">Kategori Adı</span>
+                <span class="info-box-number">@ViewBag.MaxKategori</span>
+
+                <div class="progress">
+                    <div class="progress-bar" style="width: 100%"></div>
+                </div>
+                <span class="progress-description">
+                    En fazla bloğa sahip kategori adı
+                </span>
+            </div>
+            <!-- /.info-box-content -->
+        </div>
+        <!-- /.info-box -->
+    </div>
+    <!-- /.col -->
+
+    <div class="col-md-12 col-sm-12 col-12">
+        <div class="info-box bg-fuchsia">
+            <div class="info-box-content">
+                <span class="info-box-text">Fark : True - False </span>
+                <span class="info-box-number">@ViewBag.Kategorifark</span>
+
+                <div class="progress">
+                    <div class="progress-bar" style="width: 100%"></div>
+                </div>
+                <span class="progress-description">
+                    Kategori tablosunda durumu true olan kategoriler ile false olan kategoriler arasındaki sayısal fark
+                </span>
+            </div>
+            <!-- /.info-box-content -->
+        </div>
+        <!-- /.info-box -->
+    </div>
+</div>
+<!-- /.row -->
